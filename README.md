@@ -45,7 +45,7 @@ Simple Weather is a simple app to check the weather. It was made for Desktop and
 This is a solo-dev showcase work made in just a few hours so you can expect unstability and bugs.
 
 <div align="center">
-  <img src="readme-assets/app.png" alt="Logo" style="max-height: 400px">
+  <img src="readme-assets/app.png" alt="Logo" height="400px">
 </div>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
