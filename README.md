@@ -10,7 +10,7 @@
     <br />
     <a href="https://www.linkedin.com/in/agallardol/">Getting in touch</a>
     <br />
-    <a href="https://raw.githubusercontent.com/agallardol/simple-weather/main/readme-assets/Simple weather.app"><strong>Download (Macos)</strong></a>
+    <a href="https://raw.githubusercontent.com/agallardol/simple-weather/main/readme-assets/Simple weather.zip"><strong>Download (Macos)</strong></a>
   </p>
 </div>
 
@@ -37,8 +37,6 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-
-![Simple Weather app](readme-assets/app.png "Simple weather running on macOS")
 
 Simple Weather is a simple app to check the weather. It was made for Desktop and created to learn, practice and test different frameworks and architectures keeping in mind reactivity, datacentrism and portability.
 
