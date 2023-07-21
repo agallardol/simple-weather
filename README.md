@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://github.com/agallardol/simple-weather">
-    <img src="src-tauri/Square310x310Logo.png" alt="Logo" width="80" height="80">
+    <img src="src-tauri/icons/Square310x310Logo.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Simple Weather</h3>
