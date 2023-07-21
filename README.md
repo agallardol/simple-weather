@@ -63,6 +63,9 @@ To run and work with this app you will need NVM, Node, NPM and Yarn. Having thes
 ```sh
 yarn
 ```
+
+Add a OpenWeatherMap api key on the file `src/app/interceptors/open-weather-map-api.interceptor.ts`
+
 ```sh
 yarn tauri dev
 ```
