@@ -1,0 +1,10 @@
+<div class="bg-ria-blue h-6 px-2 flex justify-end">
+    <span *ngIf="(isSyncing$ | async); else status" [ngClass]="(isSyncing$ | async) ? 'animate-pulse' : ''"
+        class="text-white">
+        Syncing...
+    </span>
+
+    <ng-template #status>
+        <span class="text-white">Last updated on {{ lastSync$ | async }}</span>
+    </ng-template>
+</div>

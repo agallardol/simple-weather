@@ -1,0 +1,26 @@
+<ng-container *ngIf="(cities$ | async)?.length; else empty">
+    <mat-tab-group class="h-full">
+        <mat-tab *ngFor="let city of (cities$ | async)" class="p-1 bg-white"
+            label="{{ city.meta.city_name }}, {{ city.meta.country_code }}">
+            <div class="background-color h-full">
+                <div class="px-2 py-1">
+                    <app-hourly-forecasting [hourlyForecasting]="city.weather?.hourlyForecasting">
+                    </app-hourly-forecasting>
+                </div>
+                <div class="px-2 py-1">
+                    <app-daily-forecasting [dailyForecasting]="city.weather?.dailyForecasting">
+                    </app-daily-forecasting>
+                </div>
+            </div>
+        </mat-tab>
+
+    </mat-tab-group>
+</ng-container>
+<ng-template #empty>
+    <div class="flex flex-col place-items-center justify-center space-y-2 h-full">
+        <button (click)="openAddCityDialog()" mat-icon-button>
+            <mat-icon>search</mat-icon>
+        </button>
+        <span class="text-gray">Add a city to start</span>
+    </div>
+</ng-template>

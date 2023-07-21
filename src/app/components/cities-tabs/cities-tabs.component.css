@@ -1,0 +1,22 @@
+.background-color {
+    height: 100%;
+    background: linear-gradient(to bottom,
+            rgb(0, 85, 131),
+            rgb(0, 151, 180),
+            rgb(200, 175, 160),
+            rgb(200, 175, 160))
+}
+
+::ng-deep .mat-mdc-tab-body-wrapper {
+    height: 100%;
+}
+
+::ng-deep .mat-mdc-tab:not(.mat-mdc-tab-disabled) .mdc-tab-indicator__content--underline,
+.mat-mdc-tab-link:not(.mat-mdc-tab-disabled) .mdc-tab-indicator__content--underline {
+    border-color: rgb(213, 56, 48);
+}
+
+::ng-deep .mat-mdc-tab:not(.mat-mdc-tab-disabled).mdc-tab--active .mdc-tab__text-label,
+.mat-mdc-tab-link:not(.mat-mdc-tab-disabled).mdc-tab--active .mdc-tab__text-label {
+    color: black;
+}

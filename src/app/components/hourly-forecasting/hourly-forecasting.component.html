@@ -1,0 +1,16 @@
+<mat-card>
+    <mat-card-header class="p-2 flex items-center">
+        <mat-card-title>Next hours</mat-card-title>
+    </mat-card-header>
+    <mat-divider></mat-divider>
+    <div class="flex p-1 divide-x overflow-x-scroll	scroll-smooth">
+        <div *ngFor="let forecast of hourlyForecasting; let isLast = last;" class="px-5 py-2">
+            <div class="flex flex-col items-center w-16">
+                <span>{{ forecast.temperature | number: '1.0-0' }}°</span>
+                <span class="text-ria-light-blue">{{ forecast.humidity }}%</span>
+                <img class="weather-icon" [src]="forecast.iconUrl">
+                <span class="text-ria-gray">{{ forecast.time | date: 'h:mm a' }}</span>
+            </div>
+        </div>
+    </div>
+</mat-card>

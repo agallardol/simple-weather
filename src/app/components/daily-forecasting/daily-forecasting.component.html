@@ -1,0 +1,19 @@
+<mat-card>
+    <mat-card-header class="p-2 flex items-center">
+        <mat-card-title>Next 5 days</mat-card-title>
+    </mat-card-header>
+    <mat-divider></mat-divider>
+    <div class="flex flex-col p-1 divide-y">
+        <div *ngFor="let forecast of dailyForecasting;" class="flex justify-between p-2">
+            <img class="weather-icon" [src]="forecast.iconUrl">
+            <div class="flex flex-col justify-center place-items-center">
+                <span>{{ forecast.time | date: 'E, LLL, d' }}</span>
+                <span class="text-xs text-ria-gray">{{ forecast.resume }}</span>
+            </div>
+            <div class="flex justify-around place-items-center space-x-2">
+                <span>{{ forecast.maxTemperature | number: '1.0-0' }}°</span>
+                <span>{{ forecast.minTemperature | number: '1.0-0' }}°</span>
+            </div>
+        </div>
+    </div>
+</mat-card>

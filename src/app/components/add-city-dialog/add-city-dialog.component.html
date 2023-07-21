@@ -1,0 +1,29 @@
+<h2 mat-dialog-title>Search your city</h2>
+<mat-dialog-content>
+    <div class="flex flex-col space-y-2">
+        <form class="example-form">
+            <mat-form-field appearance="outline" class="example-chip-list">
+                <mat-chip-grid #cityList>
+                    <mat-chip-row *ngFor="let city of (selectedCities | async)" [removable]="removable"
+                        (removed)="removeCity(city)">
+                        {{ city?.meta?.city_name }}, {{ city?.meta?.country_code }}
+                        <mat-icon matChipRemove *ngIf="removable">cancel</mat-icon>
+                    </mat-chip-row>
+                    <input placeholder="City" #cityInput #autocompleteTrigger="matAutocompleteTrigger"
+                        [formControl]="control" [matAutocomplete]="auto" [matChipInputFor]="cityList"
+                        [matChipInputSeparatorKeyCodes]="separatorKeysCodes">
+                </mat-chip-grid>
+                <mat-autocomplete #auto="matAutocomplete" (optionSelected)="selected($event)" autoActiveFirstOption>
+                    <mat-option *ngFor="let city of filteredOptions | async" [value]="city">
+                        <mat-checkbox color="primary" [checked]="isSelected(city) | async"></mat-checkbox>
+                        {{ city?.meta?.city_name }}, {{ city?.meta?.country_code }}
+                    </mat-option>
+                </mat-autocomplete>
+
+            </mat-form-field>
+        </form>
+    </div>
+</mat-dialog-content>
+<mat-dialog-actions class="flex">
+    <button mat-button [disabled]="control.invalid" (click)="closeDialog()">Close</button>
+</mat-dialog-actions>

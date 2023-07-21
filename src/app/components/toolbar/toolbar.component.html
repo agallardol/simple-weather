@@ -1,0 +1,18 @@
+<mat-toolbar class="bg-ria-blue">
+  <div class="flex items-center justify-between grow">
+    <div class="flex items-center space-x-2">
+      <img class="logo" src="assets/logo.png">
+      <span class="text-white">Simple Weather</span>
+    </div>
+    <div class="flex">
+      <button [ngClass]="(isSyncing$ | async) ? 'animate-spin' : ''" [disabled]="isSyncing$ | async" (click)="refresh()"
+        class="text-white" mat-icon-button>
+        <mat-icon class="text-white">refresh</mat-icon>
+      </button>
+
+      <button (click)="openAddCityDialog()" class="text-white" mat-icon-button>
+        <mat-icon class="text-white">search</mat-icon>
+      </button>
+    </div>
+  </div>
+</mat-toolbar>
