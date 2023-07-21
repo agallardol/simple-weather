@@ -7,6 +7,7 @@
 
   <p align="center">
     A simple app to check the weather. It was created to learn and test Tauri+Angular+Elf+Tailwind!
+    <br />
     <a href="https://www.linkedin.com/in/agallardol/">Getting in touch</a>
     <br />
     <a href="https://raw.githubusercontent.com/agallardol/simple-weather/main/readme-assets/Simple weather.app"><strong>Download (Macos)</strong></a>
@@ -37,7 +38,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Simple Weather Screen Shot][simple-weather-screenshot]](readme-assets/app.png)
+![Simple Weather app](readme-assets/app.png "Simple weather running on macOS")
 
 Simple Weather is a simple app to check the weather. It was made for Desktop and created to learn, practice and test different frameworks and architectures keeping in mind reactivity, datacentrism and portability.
 
