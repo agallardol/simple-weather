@@ -4,7 +4,7 @@ import { Injectable } from "@angular/core";
 @Injectable()
 export class OpenWeatherMapApiInterceptor implements HttpInterceptor {
 
-    private readonly API_KEY = '78a07164952e030a671b9350f648cd70';
+    private readonly API_KEY = 'fill-me';
 
     intercept(req: HttpRequest<unknown>, next: HttpHandler) {
         const authenticatedRequest = req.clone({
