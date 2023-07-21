@@ -6,7 +6,7 @@
   <h3 align="center">Simple Weather</h3>
 
   <p align="center">
-    A simple app to check the weather. It was created to learn and test Tauri+Angular+Elf+Tailwind!
+    A simple app to check the weather. It was created to learn, test and practice Tauri+Angular+Elf+Tailwind!
     <br />
     <a href="https://www.linkedin.com/in/agallardol/">Getting in touch</a>
     <br />
@@ -46,9 +46,6 @@ This is a solo-dev showcase work made in just a few hours so you can expect unst
   <img src="readme-assets/app.png" alt="Logo" height="400px">
 </div>
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 ### Built With
 
 * [Tauri](https://tauri.app/): Native apps made with Rust, Typescript and Web technologies.
@@ -57,9 +54,6 @@ This is a solo-dev showcase work made in just a few hours so you can expect unst
 * [Tailwindcss](https://tailwindcss.com/): CSS Framework to implement the UI.
 
 Of course, there are a lot of additional technologies but these are the core of this application!
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -75,14 +69,7 @@ yarn tauri dev
 
 and you will have the app runing in dev mode with all the hot-reload tooling.
 
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 <!-- CONTACT -->
 ## Contact
 
 Found me as [@agallardol](https://www.linkedin.com/in/agallardol/) on LinkedIn.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
